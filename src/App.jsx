@@ -1,10 +1,9 @@
-
-import './App.css'
+import Navbar from "./MyComponents/Navbar"
 
 function App() {
   return (
     <>
-     
+      <Navbar />
     </>
   )
 }

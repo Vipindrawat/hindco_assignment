@@ -117,3 +117,6 @@
     @apply bg-background text-foreground;
   }
 }
+.drawer-content::after {
+  height: 0 !important; /* Restrict the height */
+}

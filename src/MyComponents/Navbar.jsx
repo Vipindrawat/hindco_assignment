@@ -1,36 +1,29 @@
 import React from 'react'
-import logonew from '../../logonew.svg'
+import logonew from '../assets/logonew.svg'
 import {
     NavigationMenu,
     NavigationMenuContent,
-    NavigationMenuIndicator,
     NavigationMenuItem,
-    NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 import {
     Drawer,
-    DrawerClose,
     DrawerContent,
-    DrawerDescription,
-    DrawerFooter,
     DrawerHeader,
-    DrawerTitle,
     DrawerTrigger,
 } from "@/components/ui/drawer";
-import { RiMore2Fill } from "react-icons/ri";
 
 import { FcSearch } from "react-icons/fc";
 
 const Navbar = () => {
     return (
         <>
-            <div className="h-11 w-[100vw] text-black flex flex-row justify-center items-center bg-gray-50">
+            <div className="h-11 w-full text-white flex flex-row justify-center items-center bg-gray-800">
                 <div className="relative flex overflow-x-hidden 2xl:w-6/12 md:w-8/12 w-11/12  ">
                     <span className=" md:animate-marquee animate-marquee1 whitespace-nowrap font-medium font-Josefin">
-                        BRINGING YOU <span className='text-blue-800'>THE PERFECT JOB</span>
+                        BRINGING YOU THE PERFECT JOB
+                        {/* <span className='text-blue-800'>THE PERFECT JOB</span> */}
                     </span>
                 </div>
             </div>
@@ -82,7 +75,7 @@ const Navbar = () => {
                                     <span className='text-black'>In</span>
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid gap-3 p-4 w-44 lg:grid-cols-1 font-Josefin text-sm">
+                                    <ul className="grid gap-3 p-4 w-36 lg:grid-cols-1 font-Josefin text-sm">
                                         <li>Employee<span className='text-blue-700'>Signin</span></li>
 
                                         <li>Employer<span className="text-blue-700">Signin</span></li>
@@ -99,7 +92,7 @@ const Navbar = () => {
                                     <span className='text-black'>Up</span>
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid gap-3 p-4 w-44 lg:grid-cols-1 font-Josefin text-sm">
+                                    <ul className="grid gap-3 p-4 w-36 lg:grid-cols-1 font-Josefin text-sm">
                                         <li>Employee<span className='text-blue-700'>Signup</span></li>
 
                                         <li>Employer<span className="text-blue-700">Signup</span></li>
